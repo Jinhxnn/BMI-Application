@@ -39,7 +39,7 @@ def calculate_bmi():
         else:
             level = level_labels[3]
             color = colors[3]
-        st. success(f"Your BMI is {bmi}. You are at {level}")
+        st.markdown(f'<p style="color:{color};">Your BMI is {bmi:.2f}. You are at {level}.</p>', unsafe_allow_html=True)
 
 button = st.button("Calculate BMI")
 if button:
