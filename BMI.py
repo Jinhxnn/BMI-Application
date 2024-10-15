@@ -25,15 +25,20 @@ def calculate_bmi():
         bmi = weight/(height)**2
         bmi_thresholds = [18.5, 23, 27.5]
         level_labels = ['Risk of nutritional deficiency','Low Risk','Moderate Risk','High Risk']
+        colors = ['#FFA07A', '#32CD32', '#FFD700', '#FF4500']  # Colors: Light Salmon, Lime Green, Gold, OrangeRed
         
         if bmi <= bmi_thresholds[0]:
             level = level_labels[0]
+            color = colors[0]
         elif bmi <= bmi_thresholds[1]:
             level = level_labels[1]
+            color = colors[1]
         elif bmi <= bmi_thresholds[2]:
             level = level_labels[2]
+            color = colors[2]
         else:
             level = level_labels[3]
+            color = colors[3]
         st. success(f"Your BMI is {bmi}. You are at {level}")
 
 button = st.button("Calculate BMI")
