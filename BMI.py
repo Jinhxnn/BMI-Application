@@ -8,7 +8,7 @@ Created on Tue Mar  7 14:16:50 2023
 
 import streamlit as st
 
-st.title("Welocme to BMI calculator")
+st.title("Welcome to BMI calculator 📏")
 
 #Input
 
