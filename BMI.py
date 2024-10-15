@@ -12,9 +12,9 @@ st.title("Welcome to BMI calculator 📏")
 
 #Input
 
-weight = st.number_input("Enter your weight in KG", step = 0.1)
+weight = st.number_input("Enter your weight in KG", min_value = 0.0, step = 0.1)
 
-height = st.number_input("Enter your height in Meters", step = 0.01)
+height = st.number_input("Enter your height in Meters", min_values = 0.0, step = 0.01)
 
 def calculate_bmi():
     if height <= 0:
